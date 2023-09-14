@@ -1,4 +1,4 @@
-import { NewsRequest, NewsSUC } from "../action/newsaction";
+import { NewsFail, NewsRequest, NewsSUC } from "../action/newsaction";
 
 export const getNewsList = () => async dispatch => {
     dispatch(NewsRequest());
