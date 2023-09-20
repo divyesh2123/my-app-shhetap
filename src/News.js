@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getNewsList } from './asyncActions/newsasycaction';
+import AddNews from './AddNews';
 
 export default function News() {
 
    const news = useSelector(y=>y.news);
+
+   const newsd = useSelector(y=>y.news.addNewsSuc);
+
+   alert(newsd);
 
    console.log(news);
    const dis = useDispatch();
@@ -12,9 +17,11 @@ export default function News() {
 
 
         dis(getNewsList());
-    },[])
+    },[newsd])
   return (
     <div>
+
+      <AddNews/>
 
         <table>
         

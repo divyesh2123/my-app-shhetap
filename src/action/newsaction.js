@@ -12,5 +12,23 @@ export const NewsSUC = (payload) => ({
     type: 'NewsFail',
     payload
   })
+
+  export const AddNewsRequest = () => ({
+    type: 'AddNewsRequest',
+    
+  })
+  
+  export const AddNewsSUC = (payload) => ({
+      type: 'AddNewsSUC',
+      payload
+    })
+  
+    export const AddNewsFail = (payload) => ({
+      type: 'AddNewsFail',
+      payload
+    })
+
+
+  
   
   
